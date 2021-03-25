@@ -20,10 +20,14 @@ let facts = ['How many ears does Spock have? Three. The left ear, the right ear,
         'The rotation of earth really makes my day.',
         'I once had a teacher with a lazy eye. She couldn’t control her pupils.'];
 const messge = () => {
+        let arry = []; 
 const w = [inspirationalMsg , history , facts] ;   
-let x = Math.floor(Math.random() * 3)
-let y = Math.floor(Math.random() * 7)
-console.log(w[x][y]);
+for (let x = 0 ; x < w.length ; x ++){
+        let y = Math.floor(Math.random() * 7);
+        arry += w[x][y];
 
+};
+let newarry = arry;
+console.log(newarry);
 };
 messge();
